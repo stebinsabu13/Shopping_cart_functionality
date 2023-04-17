@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-5 px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success" href="#" >VEGIES</a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#products">Produts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success btn-light py-2 my-2" type="submit">Sign In</button><br>
+            <button class="btn btn-outline-success btn-light ms-lg-4 my-2 py-1" id="cart-icon" type="submit">
+              <span class="material-symbols-outlined">
+                shopping_cart
+              </span>
+              <span class="num align-top">0</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Cart -->
+      <div class="cart bg-light">
+          <div class="header">
+              <div class="start pt-5 ps-5 ms-5">
+                <h4>My Cart</h4>
+              </div>
+              <button id="close-cart" class="btn">
+                <span class="material-symbols-outlined">
+                  close
+                </span>
+              </button>
+          </div> 
+          <div class="orders py-2 mt-4">
+            <div class="order-box">
+                
+          </div>
+          </div>
+          <div class="bottom border-top mt-3 border-dark ps-5">
+            
+          </div>
+      </div>
+      <!--Home-->
+      <section id="home">
+        <div class="back container-fluid text-center text-light">
+          <h1 class="fw-bolder">ORGANIC VEGETABLES</h1>
+          <p>Eat Healthy, Live Healthy</p>
+          <div class="input-group">
+            <input class="search" type="text" placeholder="Enter">
+            <button class="btn btn-success">Search</button>
+          </div>
+        </div>
+      </section>
+      <!--About-->
+      <section id="about" class="bg-danger bg-gradient">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <img src="/img/about.png" class="AboutImage img-fluid"alt="jshasd">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 text-light p-lg-5 p-md-5">
+              <h1>ABOUT US</h1>
+              <p>
+              Our products are 100% organic and also hygenic products. The these are all cultiveted in our own farms.The fertilizers  and minerals we are using are 100% organic.
+              The are all daily checked for its quality.Many of us don't have access to fresh vegetables required for a healthy lifestyle. Thanks to our
+              services you can order fresh vegetables online. The online vegetable store has a wide selection of fresh vegetables. Our online vegetable delivery service makes shopping
+              easier. Getting through the day can be difficult if your body does not receive optimal nutrition. Poor nutrition can
+              affect your performance, productivity and immunity. During these times where a strong immunity is a must,
+              you just cannot simply overlook the importance of a healthy diet. Switch to a healthier lifestyle with
+              Farmers Fresh Zone. Enter a world of safe and healthy food made to improve your health and nourish you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Products-->
+      <section id="products">
+        <div class="container">
+          <h1 class="text-center pt-5">OUR PRODUCTS</h1>
+          <div class="row my-5">
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img1.png" class="card-img-top" alt="...ddsf">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Cucumber Rs:20</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img2.png" class="card-img-top" alt="...ddsf">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tomato Rs:50</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img3.png" class="card-img-top" alt="...ddsf">
+               
+                <div class="card-body text-center">
+                  <h5 class="card-title">Lemon Rs:40</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img4.png" class="card-img-top" alt="...ddsf">
+               
+                <div class="card-body text-center">
+                  <h5 class="card-title">Onion Rs:80</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img5.png" class="card-img-top" alt="...ddsf">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Ladyfinger Rs:40</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img6.png" class="card-img-top" alt="...ddsf">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Ginger Rs:50</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img7.png" class="card-img-top" alt="...ddsf">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Carrot Rs:30</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img8.png" class="card-img-top" alt="...ddsf">
+               
+                <div class="card-body text-center">
+                  <h5 class="card-title">Garlic Rs:80</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-12 py-3">
+              <div class="card shadow-lg pt-3 mx-auto">
+                
+                  <img src="/img/img9.png" class="card-img-top" alt="...ddsf">
+                
+                <div class="card-body text-center">
+                  <h5 class="card-title">Potato Rs:40</h5>
+                  <a id="add-cart" class="btn btn-success">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contact-->
+      <section id="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 ps-5 mt-5">
+              <img src="/img/contact.jpg" class="img img-fluid" alt="jdsh">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 ps-5 mt-5">
+              <h1 class="fw-medium">CONTACT US</h1>
+              <form class="inputs my-2">
+                <input type="text" class="form-control" placeholder="Enter your name">
+                <input type="email" class="form-control" placeholder="Enter your mail">
+                <textarea class="form-control" placeholder="Enter your message" rows="5"></textarea>
+                <button class="btn bg-success text-light">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer-->
+      <footer>
+        <div class="container">
+          <div class="foot row">
+            <div class="col-xl-3 col-md-6 col-12">
+                <Address>
+                  <h4>Contact Address</h4>
+                  <p>Address:kalamaserry,kochi,686532</p>
+                  <p>Email:vegies123@gmail.com</p>
+                  <p>Call us:9845375491</p>
+                </Address>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12">
+                <h4>Get To Know Us</h4>
+                <p>Our Farners</p>
+                <p>Gallery</p>
+                <p>Media</p>
+                <p>Blog</p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12">
+              <h4>Useful Links</h4>
+              <p>Privacy Policy</p>
+              <p>Return & Refund</p>
+              <p>Terms & Conditions</p>
+              <p>Disclaimer</p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12">
+              <h4>We Serve</h4>
+              <p>kochi</p>
+              <p>Kottaym</p>
+              <p>Trivandrum</p>
+              <p>Coimbatore</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

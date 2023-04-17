@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.nav-link{
+    border-bottom: 1px solid transparent;
+    font-weight: 700 !important;
+}
+.nav-link:hover{
+    border-bottom: 1px solid green;
+}
+.navbar .navbar-brand{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.cart{
+    position: fixed;
+    top:0;
+    right: -100%;
+    height: 100%;
+    width: 300px;
+    z-index: 11;
+    transition: 0.3s;
+}
+.cart.active{
+    right: 0;
+    overflow-y: scroll;
+}
+.order-details img{
+    width: 100%;
+    height: 100%;
+}
+.order-details{
+    display: grid;
+    grid-template-columns: 40% 40% 1fr;
+}
+.order-quantity{
+    width: 50%;
+}
+.bottom .btn:hover{
+    background-color: rgb(32, 32, 32)!important;
+}
+.header{
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    height: 70px;
+}
+.back{
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgb(58, 33, 33)),url(/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+.back h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.back p{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+}
+.search{
+    width: 40%;
+    height: 50px;
+}
+.row h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+#products{
+    background-color: rgb(221, 221, 221);
+}
+#products h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.card{
+    width: 250px;
+    border: none!important;
+    align-items: center;
+    background-color: rgb(221, 221, 221)!important;
+    border-radius: 10%!important;
+    overflow: hidden;
+}
+.card img{
+    height: auto;
+    width: auto;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 20px white!important;
+    transition: 5s;
+}
+#contact{
+    background: linear-gradient(white,rgb(221, 221, 221));
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.inputs .form-control{
+    margin-top: 25px;
+    width: 80%;
+}
+.inputs .btn{
+    width: 80%;
+    margin-top: 25px;
+}
+footer{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.foot p:hover{
+    font-size: large;
+    transition: 0.4s;
+}
+.foot p{
+    transition: 0.4s;
+}
+.AboutImage{
+    width: 100%;
+    height: 100%;
+}
+.img.img-fluid{
+    width: 100%;
+    height: 100%;
+}
